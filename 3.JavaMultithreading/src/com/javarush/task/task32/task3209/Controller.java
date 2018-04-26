@@ -12,7 +12,20 @@ public class Controller {
         this.view = view;
     }
 
-    public static void main(String[] args) {
+    public void init() {
 
+    }
+
+    public void exit() {
+        System.exit(0);
+    }
+
+    public static void main(String[] args) {
+        View view = new View(); // создаем представление
+        Controller controller = new Controller(view); // создаем контроллер
+        view.init(); // вот она нечто инициализация пустым методом ) пока что
+        controller.init(); // а вот она еще одна нечто инициализация
+        view.setController(controller); // устанавливаем контроллер представлению
+        controller.exit(); // и выходим
     }
 }
