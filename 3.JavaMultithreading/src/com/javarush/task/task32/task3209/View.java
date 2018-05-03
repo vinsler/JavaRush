@@ -13,6 +13,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.WindowStateListener;
 
+import static javax.swing.JOptionPane.DEFAULT_OPTION;
+
 public class View extends JFrame implements ActionListener {
     private JTabbedPane tabbedPane = new JTabbedPane();
     private JTextPane htmlTextPane = new JTextPane();
@@ -99,6 +101,20 @@ public class View extends JFrame implements ActionListener {
         initMenuBar();
         initEditor();
         pack();
+    }
+
+    public void selectHtmlTab() {
+        tabbedPane.setSelectedIndex(0);
+        resetUndo();
+    }
+
+    public void update() {
+        htmlTextPane.setDocument(controller.getDocument());
+    }
+
+    public void showAbout() {
+        JOptionPane.showMessageDialog(this,"Программа 2018 тест", "html", JOptionPane.INFORMATION_MESSAGE);
+
     }
 
     public void selectedTabChanged(){
