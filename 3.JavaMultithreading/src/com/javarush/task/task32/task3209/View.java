@@ -47,7 +47,12 @@ public class View extends JFrame implements ActionListener {
     public Controller getController() {
         return controller;
     }
-    
+
+    public boolean isHtmlTabSelected() {
+        return tabbedPane.getSelectedIndex() == 0;
+    }
+
+
     @Override
     public void actionPerformed(ActionEvent e) {
 
