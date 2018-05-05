@@ -18,9 +18,15 @@ public class Controller {
     }
 
     public void init() {
+        createNewDocument();
     }
 
     public void createNewDocument() {
+        view.selectHtmlTab();
+        this.resetDocument();
+        view.setTitle("HTML редактор");
+        view.resetUndo();
+        currentFile = null;
     }
 
     public void openDocument() {
