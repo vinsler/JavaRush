@@ -20,6 +20,23 @@ public class Controller {
     public void init() {
     }
 
+    public void createNewDocument() {
+    }
+
+    public void openDocument() {
+    }
+
+    public void saveDocument() {
+
+    }
+
+    public void saveDocumentAs() {
+
+    }
+
+
+
+
     public String getPlainText() {
         StringWriter stringWriter = new StringWriter();
         HTMLEditorKit htmlEditorKit = new HTMLEditorKit();
