@@ -1,4 +1,4 @@
-package com.javarush.task;
+package com.javarush.task.Test;
 
 public class Test001 {
     private int i = 10;

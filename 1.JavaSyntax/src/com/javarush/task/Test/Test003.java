@@ -1,6 +1,7 @@
-package com.javarush.task;
+package com.javarush.task.Test;
 
 import java.util.ArrayList;
+import static java.lang.System.*;
 
 public class Test003 {
 
@@ -47,6 +48,7 @@ public class Test003 {
     }
 
     public static void main(String[] args) {
+        out.println("asdfsadf");
 
     }
 }
