@@ -13,30 +13,26 @@ public class Space {
     public void setShip(SpaceShip ship) {
         this.ship = ship;
     }
-
     public int getWidth() {
         return width;
     }
-
     public int getHeight() {
         return height;
     }
-
     public SpaceShip getShip() {
         return ship;
     }
-
     public ArrayList<Ufo> getUfos() {
         return ufos;
     }
-
     public ArrayList<Rocket> getRockets() {
         return rockets;
     }
-
     public ArrayList<Bomb> getBombs() {
         return bombs;
     }
+
+    public static Space game;
 
     public Space(int width, int height) {
         this.width = width;
@@ -54,7 +50,6 @@ public class Space {
     public void sleep(int ms) {
         
     }
-
 
 
     public static void main(String[] args) {
